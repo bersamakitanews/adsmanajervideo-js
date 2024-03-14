@@ -2,7 +2,7 @@ var gptadslots = [];
 window.googletag = window.googletag || {cmd: []};
 dfp_keywords = getKeywords();
 
-// initialize pbjs
+
 var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
     
@@ -10,39 +10,37 @@ gpt_slot_objects = [];
 
 googletag.cmd.push(function() {
 
-//Adslot 1 declaration
     var REFRESH_KEY = 'refresh';
     var REFRESH_VALUE = 'true';
-    // This slot is allowed to refresh, as it contains the targeting keys which have been declared for refresh.
-
+    
 
     gpt_azan = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/billboard', [[320, 150], [320, 100]], 'div-gpt-ad-1646728244180-0').
       setTargeting(REFRESH_KEY, REFRESH_VALUE).
       addService(googletag.pubads());
 
-    //gpt_billboard = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/billboard', [[320, 150], [320, 100]], 'div-gpt-ad-1646728244180-0').
-      //setTargeting(REFRESH_KEY, REFRESH_VALUE).
-      //setTargeting('test', 'event').
-      //addService(googletag.pubads());
+    gpt_billboard = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/billboard', [[320, 150], [320, 100]], 'div-gpt-ad-1646728244180-0').
+      setTargeting(REFRESH_KEY, REFRESH_VALUE).
+      setTargeting('test', 'event').
+      addService(googletag.pubads());
       
     gpt_staticbanner1 = "";
-      //googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_banner1', [[300, 250], [320, 100]], 'div-gpt-ad-1646728856686-0').
-      //setTargeting('test', 'lazyload').
-      //setTargeting(REFRESH_KEY, REFRESH_VALUE).
-      //setTargeting('test', 'event').
-      //addService(googletag.pubads());
+      googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_banner1', [[300, 250], [320, 100]], 'div-gpt-ad-1646728856686-0').
+      setTargeting('test', 'lazyload').
+      setTargeting(REFRESH_KEY, REFRESH_VALUE).
+      setTargeting('test', 'event').
+      addService(googletag.pubads());
 
     gpt_staticbanner2 = "";
-      //googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_banner2', [300, 250], 'div-gpt-ad-1646728904219-0').
-      //setTargeting(REFRESH_KEY, REFRESH_VALUE).
-      //setTargeting('test', 'event').
-      //addService(googletag.pubads());
+      googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_banner2', [300, 250], 'div-gpt-ad-1646728904219-0').
+      setTargeting(REFRESH_KEY, REFRESH_VALUE).
+      setTargeting('test', 'event').
+      addService(googletag.pubads());
 
     gpt_mmr = "";
-    //googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/mmr', [300, 250], 'div-gpt-ad-1646728450863-0').
-      //setTargeting(REFRESH_KEY, REFRESH_VALUE).
-      //setTargeting('test', 'event').
-      //addService(googletag.pubads());
+    googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/mmr', [300, 250], 'div-gpt-ad-1646728450863-0').
+      setTargeting(REFRESH_KEY, REFRESH_VALUE).
+      setTargeting('test', 'event').
+      addService(googletag.pubads());
       
     
     gpt_newstag = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newstag', [1, 1], 'div-gpt-ad-1686733951533-0').
@@ -65,7 +63,7 @@ googletag.cmd.push(function() {
       
 gpt_megabillboard2 = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/mega_billboard', [[1, 1], [320, 480]], 'div-gpt-ad-1646728316272-0').addService(googletag.pubads());
       
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/billboard', [1, 1], 'div-gpt-ad-1679505370713-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/billboard', [1, 1], 'div-gpt-ad-1679505370713-0').addService(googletag.pubads());
 
 gpt_parallax1fixesize = "";
 
@@ -73,9 +71,9 @@ gpt_parallax2fixesize = "";
 
 gpt_parallaxdetailfixesize = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/parallax_detail', [[300, 250], [300, 600], [320, 480]], 'div-gpt-ad-1646728804341-0').addService(googletag.pubads());
 
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/parallax', [[300, 250], [300, 600], [1, 1]], 'div-gpt-ad-1646728672426-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/parallax', [[300, 250], [300, 600], [1, 1]], 'div-gpt-ad-1646728672426-0').addService(googletag.pubads());
 
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/parallax2', [[300, 250], [300, 600], [1, 1]], 'div-gpt-ad-1646728733553-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/parallax2', [[300, 250], [300, 600], [1, 1]], 'div-gpt-ad-1646728733553-0').addService(googletag.pubads());
 
 gptadslots[0] = "";
 gpt_stickystaticclose = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/sticky_static', [[1, 1], [320, 50], [320, 100]], 'div-gpt-ad-1646728977561-0').addService(googletag.pubads());
@@ -83,15 +81,15 @@ gpt_stickystaticclose = googletag.defineSlot('/4905536/detik_daerah_mobile/detik
 gpt_staticbanner3 = "";
 
 
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_banner3', [[320, 100], [300, 250]], 'div-gpt-ad-1646728938844-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_banner3', [[320, 100], [300, 250]], 'div-gpt-ad-1646728938844-0').addService(googletag.pubads());
 
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newsfeed1', ['fluid'], 'div-gpt-ad-1646728499915-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newsfeed1', ['fluid'], 'div-gpt-ad-1646728499915-0').addService(googletag.pubads());
 
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newsfeed2', ['fluid'], 'div-gpt-ad-1646728536549-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newsfeed2', ['fluid'], 'div-gpt-ad-1646728536549-0').addService(googletag.pubads());
 
-//googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newsfeed3', ['fluid'], 'div-gpt-ad-1646728566915-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/newsfeed3', ['fluid'], 'div-gpt-ad-1646728566915-0').addService(googletag.pubads());
 
-//googletag.defineOutOfPageSlot('/4905536/detik_daerah_mobile/detik_bali/newstag', 'div-gpt-ad-1646728639486-0').addService(googletag.pubads());
+googletag.defineOutOfPageSlot('/4905536/detik_daerah_mobile/detik_bali/newstag', 'div-gpt-ad-1646728639486-0').addService(googletag.pubads());
 
 
 
@@ -100,7 +98,7 @@ gpt_inbetween = googletag.defineOutOfPageSlot('/4905536/detik_daerah_mobile/deti
 gpt_staticdetail = googletag.defineSlot('/4905536/detik_daerah_mobile/detik_bali/static_detail', [[1, 1], [300, 250]], 'div-gpt-ad-1706604285192-0').addService(googletag.pubads());
 
 gpt_cbinternal = "";
-//googletag.defineSlot('/4905536/detik_mobile/wp/cb_internal', [300, 250], 'div-gpt-ad-1707842985557-0').addService(googletag.pubads());
+googletag.defineSlot('/4905536/detik_mobile/wp/cb_internal', [300, 250], 'div-gpt-ad-1707842985557-0').addService(googletag.pubads());
 gpt_billboard = "";
 
 gpt_slot_objects.push(gpt_azan, gpt_megabillboard2,gpt_staticbanner1, gpt_staticbanner2, gpt_stickystaticclose);
@@ -116,8 +114,8 @@ gpt_slot_objects.push(gpt_staticdetail);
 }
 
 //conditional empty cb internal 
-//if (document.getElementById('div-gpt-ad-1707842985557-0') != null) {
-//gpt_slot_objects.push(gpt_cbinternal);
+if (document.getElementById('div-gpt-ad-1707842985557-0') != null) {
+gpt_slot_objects.push(gpt_cbinternal);
 //}
 
 //conditional empty newstag 
